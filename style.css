@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #100f0f;
+}
+
+body {
+  font-family: sans-serif;
+  color: lightgrey;
+}
+
+.side-nav {
+  height: 100%;
+  width: 15vw;
+  border-right: rgb(37, 36, 36) solid 3px;
+}
+
+.search {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+i {
+  margin-top: 0.2rem;
+}
+
+.svg {
+  color: white;
+}
+
+.list {
+  margin-top: 10rem;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.account {
+  position: relative;
+  height: 100%;
+  width: 15vw;
+  border-left: rgb(37, 36, 36) solid 3px;
+  z-index: 1;
+}
+.menu {
+  height: 100%;
+  width: 70vw;
+}
+
+.posters {
+  margin: 2rem 0;
+  position: absolute;
+}
+
+.pos {
+  z-index: 2;
+  position: relative;
+  height: 55vh;
+  width: 11.4vw;
+  margin-right: 10px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  transition: flex 0.7s ease;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cover {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover:hover {
+  background-color: unset;
+}
+
+.pos.active {
+  flex: 1.5;
+  transition: flex 0.9s ease;
+}
+
+.button {
+  margin-top: 11rem;
+  opacity: 0;
+}
+
+.button span {
+  font-size: xx-small;
+  margin: 1rem;
+}
+
+.button button {
+  background-color: transparent;
+  margin-left: 0.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  border: white solid 1px;
+  color: white;
+}
+
+.active .button {
+  opacity: 1;
+}
+
+.img2,
+.img4 {
+  margin-top: 2rem;
+}
+
+.img7 {
+  margin-top: 1.5rem;
+}
+
+.img3,
+.img6 {
+  margin-top: 3rem;
+}
+
+.img5 {
+  margin-top: 4rem;
+}
+
+h3 {
+  position: absolute;
+  z-index: 3;
+}
+
+.posters {
+  display: flex;
+}
+
+.logo {
+  width: 10%;
+  height: 3.5rem;
+  margin: 1rem auto;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.avatar {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  border: rgb(37, 36, 36) solid 2px;
+}
+
+.acc {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.acc p {
+  margin-top: 0.7rem;
+  color: lightgrey;
+  font-size: small;
+}
+
+.thriller {
+  background-color: #100f0f;
+  color: white;
+}
